@@ -1,0 +1,163 @@
+<html>
+
+<head>
+
+    <style>
+
+        html {
+            -webkit-font-smoothing: antialiased;
+             -moz-osx-font-smoothing: grayscale;
+        }
+
+        @font-face {
+            font-family: "WunderBrick";
+            font-style: normal;
+            font-weight: 400;
+            src: url("wunderbrick-text.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "WunderBrick";
+            font-style: normal;
+            font-weight: 700;
+            src: url("wunderbrick-display.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Larsseit";
+            font-style: normal;
+            font-weight: normal;
+            src: url("larsseitmtch.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "LarsseitBold";
+            font-style: normal;
+            font-weight: normal;
+            src: url("larsseitjf-bold.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            src: local("Roboto"), local("Roboto-Regular"),
+                url("roboto-v18-latin-regular.woff2") format("woff2");
+        }
+
+        .btn,
+        .btn:active,
+        .btn:link,
+        .btn:visited {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: pointer;
+            pointer-events: auto;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 2.533rem;
+            padding: 0 0.8rem;
+            border: 1px solid #303D78;
+            border-radius: 1.267rem;
+            background-color: #303D78;
+            fill: #FFFFFF;
+            color: #FFFFFF;
+            font-family: "LarsseitBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+            font-size: 0.867rem;
+            font-weight: normal;
+            line-height: 1.1;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .btn .icon_knockout-fill {
+            fill: #303D78;
+        }
+
+        .btn:hover {
+            background-color: #1f274c;
+        }
+
+        .btn:hover .icon_knockout-fill {
+            fill: #1f274c;
+        }
+
+        .btn:focus {
+            border-color: #3f509c;
+            outline: none;
+            background-color: #3f509c;
+        }
+
+        .btn:focus .icon_knockout-fill {
+            fill: #3f509c;
+        }
+
+        .btn_svg {
+            width: 0.867rem;
+            height: auto;
+            max-height: 0.867rem;
+            margin-right: 0.4rem;
+        }
+
+        .btn__right .btn_svg {
+            margin-right: 0;
+            margin-left: 0.4rem;
+        }
+
+        .btn__width-square .btn_svg {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="font-family: Larsseit; font-size: 30px; font-weight: normal; line-height: normal; background: black; color: white;">
+            Testing Testing 123 - Larsseit</div><br>
+        <div
+            style="font-family: LarsseitBold; font-size: 30px; font-weight: normal; line-height: normal; background: black; color: white;">
+            Testing Testing 123 - Larsseit Bold</div><br>
+        <div style="font-family: Roboto; font-size: 30px; line-height: normal; background: black; color: white;">Testing
+            Testing 123 - Roboto</div><br>
+        <div style="font-family: Arial; font-size: 30px; line-height: normal; background: black; color: white;">Testing
+            Testing 123 - Arial</div><br>
+        <div class="grid grid__columns grid__no-stretch grid__gutter-xs" data-testid="Grid">
+            <button class="btn btn__light" type="button" data-testid="Button">
+                <svg class="btn_svg" viewBox="0 0 13 19">
+                    <title>Mobile Device</title>
+                    <path
+                        d="M9.6464,2 L3.3536,2 C2.97919813,2 2.66000132,2.13749863 2.396,2.4125 C2.13199868,2.68750138 2,3.01999805 2,3.41 L2,15.59 C2,15.980002 2.13199868,16.3124986 2.396,16.5875 C2.66000132,16.8625014 2.97919813,17 3.3536,17 L9.6464,17 C10.0208019,17 10.3399987,16.8625014 10.604,16.5875 C10.8680013,16.3124986 11,15.980002 11,15.59 L11,3.41 C11,3.01999805 10.8680013,2.68750138 10.604,2.4125 C10.3399987,2.13749863 10.0208019,2 9.6464,2 Z M6.5072,16.07 C6.25759875,16.07 6.04400089,15.9775009 5.8664,15.7925 C5.68879911,15.6074991 5.6,15.3850013 5.6,15.125 C5.6,14.8649987 5.68879911,14.6425009 5.8664,14.4575 C6.04400089,14.2724991 6.25759875,14.18 6.5072,14.18 C6.75680125,14.18 6.96799914,14.2724991 7.1408,14.4575 C7.31360086,14.6425009 7.4,14.8649987 7.4,15.125 C7.4,15.3850013 7.31360086,15.6074991 7.1408,15.7925 C6.96799914,15.9775009 6.75680125,16.07 6.5072,16.07 Z M9.6464,12.905 C9.6464,12.9950004 9.61520031,13.0749997 9.5528,13.145 C9.49039969,13.2150004 9.41120048,13.25 9.3152,13.25 L3.6848,13.25 C3.58879952,13.25 3.50960031,13.2150004 3.4472,13.145 C3.38479969,13.0749997 3.3536,12.9950004 3.3536,12.905 L3.3536,3.755 C3.3536,3.6549995 3.38479969,3.57250033 3.4472,3.5075 C3.50960031,3.44249968 3.58879952,3.41 3.6848,3.41 L9.3152,3.41 C9.41120048,3.41 9.49039969,3.44249968 9.5528,3.5075 C9.61520031,3.57250033 9.6464,3.6549995 9.6464,3.755 L9.6464,12.905 Z"
+                        fill-rule="nonzero"></path>
+                </svg><span class="btn_text">Button test</span>
+            </button>
+            <button class="btn btn__light" type="button" data-testid="Button"><svg class="btn_svg" viewBox="0 0 17 19">
+                    <title>Tablet Device</title>
+                    <path
+                        d="M13.6034286,2 L3.39657143,2 C3.01028378,2 2.68095374,2.13749863 2.40857143,2.4125 C2.13618911,2.68750138 2,3.01999805 2,3.41 L2,15.59 C2,15.980002 2.13618911,16.3124986 2.40857143,16.5875 C2.68095374,16.8625014 3.01028378,17 3.39657143,17 L13.6034286,17 C13.9897162,17 14.3190463,16.8625014 14.5914286,16.5875 C14.8638109,16.3124986 15,15.980002 15,15.59 L15,3.41 C15,3.01999805 14.8638109,2.68750138 14.5914286,2.4125 C14.3190463,2.13749863 13.9897162,2 13.6034286,2 Z M8.50742857,16.07 C8.24990347,16.07 8.02952473,15.9775009 7.84628571,15.7925 C7.6630467,15.6074991 7.57142857,15.3850013 7.57142857,15.125 C7.57142857,14.8649987 7.6630467,14.6425009 7.84628571,14.4575 C8.02952473,14.2724991 8.24990347,14.18 8.50742857,14.18 C8.76495367,14.18 8.98285625,14.2724991 9.16114286,14.4575 C9.33942946,14.6425009 9.42857143,14.8649987 9.42857143,15.125 C9.42857143,15.3850013 9.33942946,15.6074991 9.16114286,15.7925 C8.98285625,15.9775009 8.76495367,16.07 8.50742857,16.07 Z M13.6034286,12.905 C13.6034286,12.9950004 13.5712384,13.0749997 13.5068571,13.145 C13.4424759,13.2150004 13.3607624,13.25 13.2617143,13.25 L3.73828571,13.25 C3.6392376,13.25 3.55752413,13.2150004 3.49314286,13.145 C3.42876158,13.0749997 3.39657143,12.9950004 3.39657143,12.905 L3.39657143,3.755 C3.39657143,3.6549995 3.42876158,3.57250033 3.49314286,3.5075 C3.55752413,3.44249968 3.6392376,3.41 3.73828571,3.41 L13.2617143,3.41 C13.3607624,3.41 13.4424759,3.44249968 13.5068571,3.5075 C13.5712384,3.57250033 13.6034286,3.6549995 13.6034286,3.755 L13.6034286,12.905 Z">
+                    </path>
+                </svg><span class="btn_text">Button test</span>
+            </button>
+            <button class="btn btn__primary" type="button" data-testid="Button"><svg class="btn_svg"
+                    viewBox="0 0 21 21">
+                    <title>Desktop Device</title>
+                    <path
+                        d="M17.5795556,3 L3.42044444,3 C3.02755359,3 2.69259398,3.13749863 2.41555556,3.4125 C2.13851713,3.68750138 2,4.01999805 2,4.41 L2,13.785 C2,14.1650019 2.13851713,14.4924986 2.41555556,14.7675 C2.69259398,15.0425014 3.02755359,15.18 3.42044444,15.18 L9.08711111,15.18 L8.61866667,16.59 L6.488,16.59 C6.29659164,16.59 6.13037108,16.6574993 5.98933333,16.7925 C5.84829559,16.9275007 5.77777778,17.092499 5.77777778,17.2875 C5.77777778,17.482501 5.84829559,17.6499993 5.98933333,17.79 C6.13037108,17.9300007 6.29659164,18 6.488,18 L14.512,18 C14.7134825,18 14.8822215,17.9300007 15.0182222,17.79 C15.1542229,17.6499993 15.2222222,17.482501 15.2222222,17.2875 C15.2222222,17.092499 15.1542229,16.9275007 15.0182222,16.7925 C14.8822215,16.6574993 14.7134825,16.59 14.512,16.59 L12.3964444,16.59 L11.9128889,15.18 L17.5795556,15.18 C17.9724464,15.18 18.307406,15.0425014 18.5844444,14.7675 C18.8614829,14.4924986 19,14.1650019 19,13.785 L19,4.41 C19,4.01999805 18.8614829,3.68750138 18.5844444,3.4125 C18.307406,3.13749863 17.9724464,3 17.5795556,3 Z M17.1111111,13.305 L3.88888889,13.305 L3.88888889,4.875 L17.1111111,4.875 L17.1111111,13.305 Z"
+                        fill-rule="nonzero"></path>
+                </svg><span class="btn_text">Button test</span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
